@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1550412940">
+  <project timestamp="1550412940">
+    <package name="App\Domain\Authors\Controllers">
+      <file name="/var/www/html/library_api/application/app/Domain/Authors/Controllers/AuthorsController.php">
+        <class name="App\Domain\Authors\Controllers\AuthorsController" namespace="App\Domain\Authors\Controllers">
+          <metrics complexity="8" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="28" coveredelements="28"/>
+        </class>
+        <line num="15" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="20" type="method" name="getById" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="30" type="method" name="store" visibility="public" complexity="3" crap="3" count="3"/>
+        <line num="33" type="stmt" count="3"/>
+        <line num="34" type="stmt" count="3"/>
+        <line num="35" type="stmt" count="3"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="47" type="method" name="create" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="50" type="stmt" count="2"/>
+        <line num="51" type="stmt" count="2"/>
+        <line num="52" type="stmt" count="2"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <metrics loc="60" ncloc="60" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="28" coveredelements="28"/>
+      </file>
+    </package>
+    <package name="App\Domain\Authors\Entities">
+      <file name="/var/www/html/library_api/application/app/Domain/Authors/Entities/AuthorEntity.php">
+        <class name="App\Domain\Authors\Entities\AuthorEntity" namespace="App\Domain\Authors\Entities">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+        </class>
+        <line num="16" type="method" name="books" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="26" type="method" name="scopeActive" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="28" type="stmt" count="2"/>
+        <metrics loc="30" ncloc="30" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      </file>
+    </package>
+    <package name="App\Domain\Authors\Exceptions">
+      <file name="/var/www/html/library_api/application/app/Domain/Authors/Exceptions/AuthorEditException.php">
+        <class name="App\Domain\Authors\Exceptions\AuthorEditException" namespace="App\Domain\Authors\Exceptions">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/var/www/html/library_api/application/app/Domain/Authors/Exceptions/AuthorNotFoundException.php">
+        <class name="App\Domain\Authors\Exceptions\AuthorNotFoundException" namespace="App\Domain\Authors\Exceptions">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Domain\Authors\Repositories">
+      <file name="/var/www/html/library_api/application/app/Domain/Authors/Repositories/AuthorCacheRepository.php">
+        <class name="App\Domain\Authors\Repositories\AuthorCacheRepository" namespace="App\Domain\Authors\Repositories">
+          <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="18" coveredelements="18"/>
+        </class>
+        <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="17" type="stmt" count="20"/>
+        <line num="18" type="stmt" count="20"/>
+        <line num="20" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="28" type="method" name="find" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="31" type="stmt" count="16"/>
+        <line num="32" type="stmt" count="16"/>
+        <line num="35" type="method" name="update" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="37" type="stmt" count="2"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="39" type="stmt" count="2"/>
+        <line num="40" type="stmt" count="2"/>
+        <line num="43" type="method" name="create" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="45" type="stmt" count="2"/>
+        <line num="46" type="stmt" count="2"/>
+        <line num="47" type="stmt" count="2"/>
+        <metrics loc="49" ncloc="49" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="18" coveredelements="18"/>
+      </file>
+      <file name="/var/www/html/library_api/application/app/Domain/Authors/Repositories/AuthorRepository.php">
+        <class name="App\Domain\Authors\Repositories\AuthorRepository" namespace="App\Domain\Authors\Repositories">
+          <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="12" coveredelements="12"/>
+        </class>
+        <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="26"/>
+        <line num="14" type="stmt" count="26"/>
+        <line num="15" type="stmt" count="26"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="19" type="stmt" count="2"/>
+        <line num="22" type="method" name="find" visibility="public" complexity="1" crap="1" count="19"/>
+        <line num="24" type="stmt" count="19"/>
+        <line num="27" type="method" name="create" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="32" type="method" name="update" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="34" type="stmt" count="2"/>
+        <line num="35" type="stmt" count="2"/>
+        <metrics loc="37" ncloc="37" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="12" coveredelements="12"/>
+      </file>
+    </package>
+    <package name="App\Domain\Authors\Resources">
+      <file name="/var/www/html/library_api/application/app/Domain/Authors/Resources/AuthorListResource.php">
+        <class name="App\Domain\Authors\Resources\AuthorListResource" namespace="App\Domain\Authors\Resources">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="11" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="13" type="stmt" count="2"/>
+        <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+      <file name="/var/www/html/library_api/application/app/Domain/Authors/Resources/AuthorResource.php">
+        <class name="App\Domain\Authors\Resources\AuthorResource" namespace="App\Domain\Authors\Resources">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="8" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="11" type="stmt" count="6"/>
+        <line num="12" type="stmt" count="6"/>
+        <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+    </package>
+    <package name="App\Domain\Authors\Services">
+      <file name="/var/www/html/library_api/application/app/Domain/Authors/Services/AuthorService.php">
+        <class name="App\Domain\Authors\Services\AuthorService" namespace="App\Domain\Authors\Services">
+          <metrics complexity="9" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="29" coveredelements="29"/>
+        </class>
+        <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="26"/>
+        <line num="21" type="stmt" count="26"/>
+        <line num="22" type="stmt" count="26"/>
+        <line num="24" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <line num="30" type="method" name="create" visibility="public" complexity="2" crap="2" count="4"/>
+        <line num="32" type="stmt" count="4"/>
+        <line num="33" type="stmt" count="4"/>
+        <line num="35" type="stmt" count="4"/>
+        <line num="36" type="stmt" count="2"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="39" type="stmt" count="2"/>
+        <line num="42" type="method" name="update" visibility="public" complexity="3" crap="3" count="6"/>
+        <line num="44" type="stmt" count="6"/>
+        <line num="45" type="stmt" count="6"/>
+        <line num="46" type="stmt" count="6"/>
+        <line num="48" type="stmt" count="6"/>
+        <line num="49" type="stmt" count="2"/>
+        <line num="52" type="stmt" count="4"/>
+        <line num="53" type="stmt" count="2"/>
+        <line num="55" type="stmt" count="2"/>
+        <line num="56" type="stmt" count="2"/>
+        <line num="59" type="method" name="getById" visibility="public" complexity="2" crap="2" count="16"/>
+        <line num="61" type="stmt" count="16"/>
+        <line num="62" type="stmt" count="16"/>
+        <line num="63" type="stmt" count="16"/>
+        <line num="64" type="stmt" count="5"/>
+        <line num="66" type="stmt" count="11"/>
+        <metrics loc="68" ncloc="68" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="29" coveredelements="29"/>
+      </file>
+    </package>
+    <package name="App\Domain\Authors\Validators">
+      <file name="/var/www/html/library_api/application/app/Domain/Authors/Validators/AuthorValidator.php">
+        <class name="App\Domain\Authors\Validators\AuthorValidator" namespace="App\Domain\Authors\Validators">
+          <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="13" type="stmt" count="10"/>
+        <line num="14" type="stmt" count="10"/>
+        <line num="16" type="method" name="validateCreate" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="18" type="stmt" count="4"/>
+        <line num="19" type="stmt" count="4"/>
+        <line num="23" type="method" name="validateUpdate" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="25" type="stmt" count="6"/>
+        <line num="26" type="stmt" count="6"/>
+        <line num="30" type="method" name="make" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="32" type="stmt" count="10"/>
+        <line num="33" type="stmt" count="10"/>
+        <line num="36" type="method" name="setMessages" visibility="private" complexity="1" crap="1" count="10"/>
+        <line num="38" type="stmt" count="10"/>
+        <line num="42" type="stmt" count="10"/>
+        <metrics loc="43" ncloc="43" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
+      </file>
+    </package>
+    <package name="App\Domain\Books\Controllers">
+      <file name="/var/www/html/library_api/application/app/Domain/Books/Controllers/BooksController.php">
+        <class name="App\Domain\Books\Controllers\BooksController" namespace="App\Domain\Books\Controllers">
+          <metrics complexity="10" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="30" elements="35" coveredelements="35"/>
+        </class>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="22" type="method" name="getById" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="31" type="method" name="store" visibility="public" complexity="3" crap="3" count="5"/>
+        <line num="34" type="stmt" count="5"/>
+        <line num="35" type="stmt" count="5"/>
+        <line num="36" type="stmt" count="5"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="4"/>
+        <line num="40" type="stmt" count="3"/>
+        <line num="41" type="stmt" count="3"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="48" type="method" name="create" visibility="public" complexity="2" crap="2" count="4"/>
+        <line num="51" type="stmt" count="4"/>
+        <line num="52" type="stmt" count="4"/>
+        <line num="53" type="stmt" count="4"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="3"/>
+        <line num="57" type="stmt" count="3"/>
+        <line num="58" type="stmt" count="3"/>
+        <line num="62" type="method" name="remove" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="65" type="stmt" count="2"/>
+        <line num="66" type="stmt" count="2"/>
+        <line num="67" type="stmt" count="1"/>
+        <line num="68" type="stmt" count="1"/>
+        <line num="69" type="stmt" count="1"/>
+        <line num="70" type="stmt" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <metrics loc="74" ncloc="74" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="30" elements="35" coveredelements="35"/>
+      </file>
+    </package>
+    <package name="App\Domain\Books\Entities">
+      <file name="/var/www/html/library_api/application/app/Domain/Books/Entities/BookEntity.php">
+        <class name="App\Domain\Books\Entities\BookEntity" namespace="App\Domain\Books\Entities">
+          <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="14" coveredelements="14"/>
+        </class>
+        <line num="19" type="method" name="authors" visibility="public" complexity="1" crap="1" count="61"/>
+        <line num="21" type="stmt" count="61"/>
+        <line num="22" type="stmt" count="61"/>
+        <line num="23" type="stmt" count="61"/>
+        <line num="24" type="stmt" count="61"/>
+        <line num="25" type="stmt" count="61"/>
+        <line num="29" type="method" name="disciplines" visibility="public" complexity="1" crap="1" count="61"/>
+        <line num="31" type="stmt" count="61"/>
+        <line num="32" type="stmt" count="61"/>
+        <line num="33" type="stmt" count="61"/>
+        <line num="34" type="stmt" count="61"/>
+        <line num="35" type="stmt" count="61"/>
+        <line num="39" type="method" name="scopeActive" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <metrics loc="43" ncloc="43" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="14" coveredelements="14"/>
+      </file>
+    </package>
+    <package name="App\Domain\Books\Exceptions">
+      <file name="/var/www/html/library_api/application/app/Domain/Books/Exceptions/BookEditException.php">
+        <class name="App\Domain\Books\Exceptions\BookEditException" namespace="App\Domain\Books\Exceptions">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/var/www/html/library_api/application/app/Domain/Books/Exceptions/BookNotFoundException.php">
+        <class name="App\Domain\Books\Exceptions\BookNotFoundException" namespace="App\Domain\Books\Exceptions">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Domain\Books\Repositories">
+      <file name="/var/www/html/library_api/application/app/Domain/Books/Repositories/BookCacheRepository.php">
+        <class name="App\Domain\Books\Repositories\BookCacheRepository" namespace="App\Domain\Books\Repositories">
+          <metrics complexity="6" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="23" coveredelements="23"/>
+        </class>
+        <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="14"/>
+        <line num="17" type="stmt" count="14"/>
+        <line num="18" type="stmt" count="14"/>
+        <line num="20" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="27" type="method" name="find" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="30" type="stmt" count="10"/>
+        <line num="31" type="stmt" count="10"/>
+        <line num="34" type="method" name="update" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="36" type="stmt" count="2"/>
+        <line num="37" type="stmt" count="2"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="39" type="stmt" count="2"/>
+        <line num="42" type="method" name="create" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="44" type="stmt" count="2"/>
+        <line num="45" type="stmt" count="2"/>
+        <line num="46" type="stmt" count="2"/>
+        <line num="49" type="method" name="remove" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="51" type="stmt" count="2"/>
+        <line num="52" type="stmt" count="2"/>
+        <line num="53" type="stmt" count="2"/>
+        <line num="54" type="stmt" count="2"/>
+        <metrics loc="56" ncloc="56" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="23" coveredelements="23"/>
+      </file>
+      <file name="/var/www/html/library_api/application/app/Domain/Books/Repositories/BookRepository.php">
+        <class name="App\Domain\Books\Repositories\BookRepository" namespace="App\Domain\Books\Repositories">
+          <metrics complexity="8" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="25" coveredelements="25"/>
+        </class>
+        <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="26"/>
+        <line num="14" type="stmt" count="26"/>
+        <line num="15" type="stmt" count="26"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="19" type="stmt" count="2"/>
+        <line num="22" type="method" name="find" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="24" type="stmt" count="15"/>
+        <line num="27" type="method" name="create" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="2"/>
+        <line num="32" type="stmt" count="2"/>
+        <line num="34" type="stmt" count="2"/>
+        <line num="37" type="method" name="update" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="39" type="stmt" count="2"/>
+        <line num="40" type="stmt" count="2"/>
+        <line num="42" type="stmt" count="2"/>
+        <line num="43" type="stmt" count="2"/>
+        <line num="45" type="stmt" count="2"/>
+        <line num="48" type="method" name="syncAuthors" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="50" type="stmt" count="4"/>
+        <line num="53" type="method" name="syncDisciplines" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="55" type="stmt" count="4"/>
+        <line num="58" type="method" name="remove" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="60" type="stmt" count="2"/>
+        <line num="61" type="stmt" count="2"/>
+        <metrics loc="63" ncloc="63" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="25" coveredelements="25"/>
+      </file>
+    </package>
+    <package name="App\Domain\Books\Resources">
+      <file name="/var/www/html/library_api/application/app/Domain/Books/Resources/BookListResource.php">
+        <class name="App\Domain\Books\Resources\BookListResource" namespace="App\Domain\Books\Resources">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="11" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="13" type="stmt" count="2"/>
+        <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+      <file name="/var/www/html/library_api/application/app/Domain/Books/Resources/BookResource.php">
+        <class name="App\Domain\Books\Resources\BookResource" namespace="App\Domain\Books\Resources">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="11" coveredelements="11"/>
+        </class>
+        <line num="8" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="11" type="stmt" count="6"/>
+        <line num="12" type="stmt" count="6"/>
+        <line num="13" type="stmt" count="6"/>
+        <line num="14" type="stmt" count="6"/>
+        <line num="16" type="stmt" count="6"/>
+        <line num="17" type="stmt" count="6"/>
+        <line num="18" type="stmt" count="6"/>
+        <line num="20" type="stmt" count="6"/>
+        <line num="21" type="stmt" count="6"/>
+        <line num="22" type="stmt" count="6"/>
+        <metrics loc="25" ncloc="25" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="11" coveredelements="11"/>
+      </file>
+    </package>
+    <package name="App\Domain\Books\Services">
+      <file name="/var/www/html/library_api/application/app/Domain/Books/Services/BookService.php">
+        <class name="App\Domain\Books\Services\BookService" namespace="App\Domain\Books\Services">
+          <metrics complexity="15" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="44" elements="52" coveredelements="52"/>
+        </class>
+        <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="26"/>
+        <line num="24" type="stmt" count="26"/>
+        <line num="25" type="stmt" count="26"/>
+        <line num="27" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="33" type="method" name="create" visibility="public" complexity="2" crap="2" count="8"/>
+        <line num="35" type="stmt" count="8"/>
+        <line num="37" type="stmt" count="8"/>
+        <line num="38" type="stmt" count="8"/>
+        <line num="40" type="stmt" count="8"/>
+        <line num="41" type="stmt" count="2"/>
+        <line num="44" type="stmt" count="6"/>
+        <line num="45" type="stmt" count="4"/>
+        <line num="47" type="stmt" count="2"/>
+        <line num="48" type="stmt" count="2"/>
+        <line num="49" type="stmt" count="2"/>
+        <line num="52" type="method" name="update" visibility="public" complexity="3" crap="3" count="8"/>
+        <line num="54" type="stmt" count="8"/>
+        <line num="55" type="stmt" count="8"/>
+        <line num="57" type="stmt" count="8"/>
+        <line num="58" type="stmt" count="8"/>
+        <line num="60" type="stmt" count="8"/>
+        <line num="61" type="stmt" count="2"/>
+        <line num="63" type="stmt" count="6"/>
+        <line num="64" type="stmt" count="2"/>
+        <line num="67" type="stmt" count="4"/>
+        <line num="68" type="stmt" count="3"/>
+        <line num="70" type="stmt" count="2"/>
+        <line num="71" type="stmt" count="2"/>
+        <line num="74" type="method" name="getById" visibility="public" complexity="2" crap="2" count="6"/>
+        <line num="76" type="stmt" count="6"/>
+        <line num="77" type="stmt" count="6"/>
+        <line num="78" type="stmt" count="6"/>
+        <line num="79" type="stmt" count="2"/>
+        <line num="81" type="stmt" count="4"/>
+        <line num="84" type="method" name="verifyAuthors" visibility="private" complexity="2" crap="2" count="10"/>
+        <line num="86" type="stmt" count="10"/>
+        <line num="87" type="stmt" count="10"/>
+        <line num="88" type="stmt" count="10"/>
+        <line num="90" type="stmt" count="7"/>
+        <line num="92" type="method" name="verifyDiscliplines" visibility="private" complexity="2" crap="2" count="7"/>
+        <line num="94" type="stmt" count="7"/>
+        <line num="95" type="stmt" count="7"/>
+        <line num="96" type="stmt" count="7"/>
+        <line num="98" type="stmt" count="4"/>
+        <line num="100" type="method" name="remove" visibility="public" complexity="2" crap="2" count="4"/>
+        <line num="102" type="stmt" count="4"/>
+        <line num="103" type="stmt" count="4"/>
+        <line num="105" type="stmt" count="4"/>
+        <line num="106" type="stmt" count="2"/>
+        <line num="108" type="stmt" count="2"/>
+        <metrics loc="110" ncloc="110" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="44" elements="52" coveredelements="52"/>
+      </file>
+    </package>
+    <package name="App\Domain\Books\Validators">
+      <file name="/var/www/html/library_api/application/app/Domain/Books/Validators/BookValidator.php">
+        <class name="App\Domain\Books\Validators\BookValidator" namespace="App\Domain\Books\Validators">
+          <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="18" coveredelements="18"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="13" type="stmt" count="16"/>
+        <line num="14" type="stmt" count="16"/>
+        <line num="16" type="method" name="validateCreate" visibility="public" complexity="1" crap="1" count="8"/>
+        <line num="18" type="stmt" count="8"/>
+        <line num="19" type="stmt" count="8"/>
+        <line num="26" type="method" name="validateUpdate" visibility="public" complexity="1" crap="1" count="8"/>
+        <line num="28" type="stmt" count="8"/>
+        <line num="29" type="stmt" count="8"/>
+        <line num="30" type="stmt" count="8"/>
+        <line num="31" type="stmt" count="8"/>
+        <line num="32" type="stmt" count="8"/>
+        <line num="36" type="method" name="make" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="38" type="stmt" count="16"/>
+        <line num="39" type="stmt" count="16"/>
+        <line num="42" type="method" name="setMessages" visibility="private" complexity="1" crap="1" count="16"/>
+        <line num="44" type="stmt" count="16"/>
+        <line num="52" type="stmt" count="16"/>
+        <metrics loc="53" ncloc="53" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="18" coveredelements="18"/>
+      </file>
+    </package>
+    <package name="App\Domain\Disciplines\Controllers">
+      <file name="/var/www/html/library_api/application/app/Domain/Disciplines/Controllers/DisciplinesController.php">
+        <class name="App\Domain\Disciplines\Controllers\DisciplinesController" namespace="App\Domain\Disciplines\Controllers">
+          <metrics complexity="8" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="28" coveredelements="28"/>
+        </class>
+        <line num="15" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="20" type="method" name="getById" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="30" type="method" name="store" visibility="public" complexity="3" crap="3" count="3"/>
+        <line num="33" type="stmt" count="3"/>
+        <line num="34" type="stmt" count="3"/>
+        <line num="35" type="stmt" count="3"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="47" type="method" name="create" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="50" type="stmt" count="2"/>
+        <line num="51" type="stmt" count="2"/>
+        <line num="52" type="stmt" count="2"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <metrics loc="60" ncloc="60" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="28" coveredelements="28"/>
+      </file>
+    </package>
+    <package name="App\Domain\Disciplines\Entities">
+      <file name="/var/www/html/library_api/application/app/Domain/Disciplines/Entities/DisciplineEntity.php">
+        <class name="App\Domain\Disciplines\Entities\DisciplineEntity" namespace="App\Domain\Disciplines\Entities">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+        </class>
+        <line num="15" type="method" name="books" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="25" type="method" name="scopeActive" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <metrics loc="29" ncloc="29" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      </file>
+    </package>
+    <package name="App\Domain\Disciplines\Exceptions">
+      <file name="/var/www/html/library_api/application/app/Domain/Disciplines/Exceptions/DisciplineEditException.php">
+        <class name="App\Domain\Disciplines\Exceptions\DisciplineEditException" namespace="App\Domain\Disciplines\Exceptions">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/var/www/html/library_api/application/app/Domain/Disciplines/Exceptions/DisciplineNotFoundException.php">
+        <class name="App\Domain\Disciplines\Exceptions\DisciplineNotFoundException" namespace="App\Domain\Disciplines\Exceptions">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Domain\Disciplines\Repositories">
+      <file name="/var/www/html/library_api/application/app/Domain/Disciplines/Repositories/DisciplineCacheRepository.php">
+        <class name="App\Domain\Disciplines\Repositories\DisciplineCacheRepository" namespace="App\Domain\Disciplines\Repositories">
+          <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="18" coveredelements="18"/>
+        </class>
+        <line num="13" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="17"/>
+        <line num="15" type="stmt" count="17"/>
+        <line num="16" type="stmt" count="17"/>
+        <line num="18" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="21" type="stmt" count="2"/>
+        <line num="22" type="stmt" count="2"/>
+        <line num="26" type="method" name="find" visibility="public" complexity="1" crap="1" count="13"/>
+        <line num="29" type="stmt" count="13"/>
+        <line num="30" type="stmt" count="13"/>
+        <line num="33" type="method" name="update" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="35" type="stmt" count="2"/>
+        <line num="36" type="stmt" count="2"/>
+        <line num="37" type="stmt" count="2"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="41" type="method" name="create" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="43" type="stmt" count="2"/>
+        <line num="44" type="stmt" count="2"/>
+        <line num="45" type="stmt" count="2"/>
+        <metrics loc="47" ncloc="47" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="18" coveredelements="18"/>
+      </file>
+      <file name="/var/www/html/library_api/application/app/Domain/Disciplines/Repositories/DisciplineRepository.php">
+        <class name="App\Domain\Disciplines\Repositories\DisciplineRepository" namespace="App\Domain\Disciplines\Repositories">
+          <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="12" coveredelements="12"/>
+        </class>
+        <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="23"/>
+        <line num="14" type="stmt" count="23"/>
+        <line num="15" type="stmt" count="23"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="19" type="stmt" count="2"/>
+        <line num="22" type="method" name="find" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="24" type="stmt" count="16"/>
+        <line num="27" type="method" name="create" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="32" type="method" name="update" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="34" type="stmt" count="2"/>
+        <line num="35" type="stmt" count="2"/>
+        <metrics loc="37" ncloc="37" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="12" coveredelements="12"/>
+      </file>
+    </package>
+    <package name="App\Domain\Disciplines\Resources">
+      <file name="/var/www/html/library_api/application/app/Domain/Disciplines/Resources/DisciplineListResource.php">
+        <class name="App\Domain\Disciplines\Resources\DisciplineListResource" namespace="App\Domain\Disciplines\Resources">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="11" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="13" type="stmt" count="2"/>
+        <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+      <file name="/var/www/html/library_api/application/app/Domain/Disciplines/Resources/DisciplineResource.php">
+        <class name="App\Domain\Disciplines\Resources\DisciplineResource" namespace="App\Domain\Disciplines\Resources">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="8" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="11" type="stmt" count="6"/>
+        <line num="12" type="stmt" count="6"/>
+        <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+    </package>
+    <package name="App\Domain\Disciplines\Services">
+      <file name="/var/www/html/library_api/application/app/Domain/Disciplines/Services/DisciplineService.php">
+        <class name="App\Domain\Disciplines\Services\DisciplineService" namespace="App\Domain\Disciplines\Services">
+          <metrics complexity="9" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="29" coveredelements="29"/>
+        </class>
+        <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="23"/>
+        <line num="23" type="stmt" count="23"/>
+        <line num="24" type="stmt" count="23"/>
+        <line num="26" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="32" type="method" name="create" visibility="public" complexity="2" crap="2" count="4"/>
+        <line num="34" type="stmt" count="4"/>
+        <line num="35" type="stmt" count="4"/>
+        <line num="37" type="stmt" count="4"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="41" type="stmt" count="2"/>
+        <line num="42" type="stmt" count="2"/>
+        <line num="45" type="method" name="update" visibility="public" complexity="3" crap="3" count="6"/>
+        <line num="47" type="stmt" count="6"/>
+        <line num="48" type="stmt" count="6"/>
+        <line num="49" type="stmt" count="6"/>
+        <line num="51" type="stmt" count="6"/>
+        <line num="52" type="stmt" count="2"/>
+        <line num="55" type="stmt" count="4"/>
+        <line num="56" type="stmt" count="2"/>
+        <line num="58" type="stmt" count="2"/>
+        <line num="59" type="stmt" count="2"/>
+        <line num="62" type="method" name="getById" visibility="public" complexity="2" crap="2" count="13"/>
+        <line num="64" type="stmt" count="13"/>
+        <line num="65" type="stmt" count="13"/>
+        <line num="66" type="stmt" count="13"/>
+        <line num="67" type="stmt" count="5"/>
+        <line num="69" type="stmt" count="10"/>
+        <metrics loc="71" ncloc="71" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="29" coveredelements="29"/>
+      </file>
+    </package>
+    <package name="App\Domain\Disciplines\Validators">
+      <file name="/var/www/html/library_api/application/app/Domain/Disciplines/Validators/DisciplineValidator.php">
+        <class name="App\Domain\Disciplines\Validators\DisciplineValidator" namespace="App\Domain\Disciplines\Validators">
+          <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="13" type="stmt" count="10"/>
+        <line num="14" type="stmt" count="10"/>
+        <line num="16" type="method" name="validateCreate" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="18" type="stmt" count="4"/>
+        <line num="19" type="stmt" count="4"/>
+        <line num="23" type="method" name="validateUpdate" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="25" type="stmt" count="6"/>
+        <line num="26" type="stmt" count="6"/>
+        <line num="30" type="method" name="make" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="32" type="stmt" count="10"/>
+        <line num="33" type="stmt" count="10"/>
+        <line num="36" type="method" name="setMessages" visibility="private" complexity="1" crap="1" count="10"/>
+        <line num="38" type="stmt" count="10"/>
+        <line num="42" type="stmt" count="10"/>
+        <metrics loc="43" ncloc="43" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
+      </file>
+    </package>
+    <metrics files="30" loc="1115" ncloc="1115" classes="24" methods="93" coveredmethods="93" conditionals="0" coveredconditionals="0" statements="317" coveredstatements="317" elements="410" coveredelements="410"/>
+  </project>
+</coverage>

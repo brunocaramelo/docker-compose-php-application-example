@@ -1,0 +1,179 @@
+version: '2'
+
+services:
+  mysql:
+    image: mariadb:latest
+    container_name: mysql-library
+    volumes:
+      - ~/.docker/mariadb:/var/lib/mysql
+    ports: 
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=testes
+      - MYSQL_DATABASE=library_admin
+      - MYSQL_USER=sandbox
+      - MYSQL_PASSWORD=sandbox
+      
+  redis:
+    image: redis:alpine
+    container_name: redis-library
+    command: ['redis-server', '--bind','0.0.0.0','--requirepass', 'testes','--port','6380']
+    volumes:
+      - redis-data:/data
+  php:
+    build:
+      context: .
+      dockerfile: ./docker/php7-fpm/Dockerfile
+    image: repo-registry-local/libraryapitest-app-example:v4.0
+    container_name: php-library-example
+    depends_on:
+      - redis
+      - mysql
+    command: bash -c "php artisan migrate && php-fpm"
+    environment:
+      APP_KEY: base64:a89Bj62VIrzfDCsb3m8BNU+JedVKtEZEmqif25fR2g0=
+      APP_ENV: local
+      DB_PORT: 3306
+      DB_USERNAME: sandbox
+      DB_DATABASE: library_admin
+      DB_PASSWORD: sandbox
+      DB_HOST: mysql
+      MYSQL_HOST: mysql
+      REDIS_HOST: redis
+      REDIS_PORT: 6380
+      REDIS_PASSWORD: testes
+      DEBUG: 1
+      CACHE_DRIVER: redis
+      SESSION_DRIVER: redis
+      LOG_CHANNEL: stderr
+      LOG_STDERR_FORMATTER: Monolog\Formatter\JsonFormatter
+      QUEUE_DRIVER: rabbitmq
+      QUEUE_CONNECTION: rabbitmq
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      RABBITMQ_VHOST: /
+      RABBITMQ_LOGIN: admin
+      RABBITMQ_PASSWORD: admin
+      RABBITMQ_QUEUE: test
+    
+    links:
+      - mysql
+      - redis
+      - rabbitmq
+    volumes:
+     - ./application/:/app:rw
+     - /app/vendor
+  worker-php:
+    build:
+      context: .
+      dockerfile: ./docker/php7-fpm/Dockerfile
+    image: libraryapiotra:php-worker-example
+    container_name: php-library-example-worker
+    depends_on:
+      - redis
+      - mysql
+      - rabbitmq
+    command: sh -c "crontab scheduler.txt; cron -f; php-fpm  ; php-fpm -v"
+    environment:
+      APP_KEY: base64:a89Bj62VIrzfDCsb3m8BNU+JedVKtEZEmqif25fR2g0=
+      APP_ENV: local
+      DB_PORT: 3306
+      DB_USERNAME: sandbox
+      DB_DATABASE: library_admin
+      DB_PASSWORD: sandbox
+      DB_HOST: mysql
+      MYSQL_HOST: mysql
+      REDIS_HOST: redis
+      REDIS_PORT: 6380
+      REDIS_PASSWORD: testes
+      DEBUG: 1
+      CACHE_DRIVER: redis
+      SESSION_DRIVER: redis
+      LOG_CHANNEL: stderr
+      LOG_STDERR_FORMATTER: Monolog\Formatter\JsonFormatter
+      QUEUE_CONNECTION: rabbitmq
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      RABBITMQ_VHOST: /
+      RABBITMQ_LOGIN: admin
+      RABBITMQ_PASSWORD: admin
+      RABBITMQ_QUEUE: test
+    
+    links:
+      - mysql
+      - redis
+      - rabbitmq
+    volumes:
+      - ./application/:/app:rw
+      - /app/vendor
+  worker-queue:
+    build:
+      context: .
+      dockerfile: ./docker/php7-fpm/Dockerfile
+    image: libraryapiotra:php-worker-queue
+    container_name: php-library-worker-queue-example
+    depends_on:
+      - redis
+      - mysql
+    command: sh -c "php /app/artisan queue:work --verbose --tries=7 --timeout=90"
+    environment:
+      APP_KEY: base64:a89Bj62VIrzfDCsb3m8BNU+JedVKtEZEmqif25fR2g0=
+      APP_ENV: local
+      DB_PORT: 3306
+      DB_USERNAME: sandbox
+      DB_DATABASE: library_admin
+      DB_PASSWORD: sandbox
+      DB_HOST: mysql
+      MYSQL_HOST: mysql
+      REDIS_HOST: redis
+      REDIS_PORT: 6380
+      REDIS_PASSWORD: testes
+      DEBUG: 1
+      CACHE_DRIVER: redis
+      SESSION_DRIVER: redis
+      LOG_CHANNEL: stderr
+      LOG_STDERR_FORMATTER: Monolog\Formatter\JsonFormatter
+      QUEUE_CONNECTION: rabbitmq
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      RABBITMQ_VHOST: /
+      RABBITMQ_LOGIN: admin
+      RABBITMQ_PASSWORD: admin
+      RABBITMQ_QUEUE: test
+    links:
+      - mysql
+      - redis
+      - rabbitmq
+    volumes:
+      - ./application/:/app:rw
+      - /app/vendor
+
+  web:
+    image: nginx:1.19-alpine
+    container_name: nginx-library
+    depends_on:
+      - php
+    volumes_from:
+      - php
+    volumes:
+      - ./docker/nginx/default:/etc/nginx/conf.d/default.conf
+      - ./application/:/app:rw
+    ports:
+      - 80:80
+  rabbitmq:
+        image: rabbitmq:3-management-alpine
+        container_name: rabbitmq
+        volumes:
+            - ~/.docker/rabbitmq/data/:/var/lib/rabbitmq/
+        environment:
+            RABBITMQ_ERLANG_COOKIE: This_is_my_secret_phrase
+            RABBITMQ_DEFAULT_USER: admin
+            RABBITMQ_DEFAULT_PASS: admin
+        ports:
+            - 5672:5672
+            - 15672:15672
+volumes:
+  redis-data:
+    driver: "local"
+  mysql-data:
+    driver: "local"

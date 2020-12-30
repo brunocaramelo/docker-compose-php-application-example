@@ -1,0 +1,323 @@
+[{
+	"id": 1,
+	"isbn": 7898592131010,
+	"title": "360° Literatura",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11603117CJ_resized_596x800.jpg",
+	"author": [
+		"Clenir Bellezi de Oliveira"
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Literatura",
+		"Língua Portuguesa"
+	],
+	"price": 239.00,
+	"created_at": "2018-01-15 09:53:06", 
+	"updated_at": "2018-10-12 10:27:11"
+},{
+	"id": 2,
+	"isbn": 7898592131058,
+	"title": "360° Produção de Texto",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11603118CJ_resized_596x800.jpg",
+	"author": [
+		"Maria Inês Campos",
+		"Regina Braz Rocha"
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Língua Portuguesa"
+	],
+	"price": 219.00,
+	"created_at": "2018-01-06 22:58:47", 
+	"updated_at": "2018-04-12 02:05:55"
+},{
+	"id": 3,
+	"isbn": 7898592130853,
+	"title": "360° Gramática",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
+	"author": [
+		"Mauro Ferreira"
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Gramática",
+		"Língua Portuguesa"
+	],
+	"price": 249.00,
+	"created_at": "2018-02-13 12:32:29", 
+	"updated_at": "2018-10-12 16:42:49"
+},{
+	"id": 4,
+	"isbn": 7898592131034,
+	"title": "360° Matemática",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11615647CJ_resized_596x800.jpg",
+	"author": [
+		"José Ruy Giovanni",
+		"José Ruy Giovanni Jr.",
+		"José Roberto Bonjorno",
+		"Paulo Roberto Câmara de Sousa"
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Matemática"
+	],
+	"price": 249.00,
+	"created_at": "2018-01-30 05:36:28", 
+	"updated_at": "2018-02-02 17:16:13"
+},{
+	"id": 5,
+	"isbn": 7898592130990,
+	"title": "360° Geografia",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11633072CJ_resized_600x794.jpg",
+	"author": [
+		"Edilson Adão",
+		"Laercio Furquim Jr."
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Geografia"
+	],
+	"price": 249.00,
+	"created_at": "2018-01-08 22:44:58", 
+	"updated_at": "2018-09-21 08:41:52"
+},{
+	"id": 6,
+	"isbn": 7898592131096,
+	"title": "360° Química",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11655078CJ_resized_596x800.jpg",
+	"author": [
+		"Dalton Franco"
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Química"
+	],
+	"price": 249.00,
+	"created_at": "2018-01-17 02:40:21", 
+	"updated_at": "2018-05-29 02:35:02"
+},{
+	"id": 7,
+	"isbn": 7898592131096,
+	"title": "360º Espanhol",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11687325CJM_resized_595x800.jpg",
+	"author": [
+		"Henrique Romanos",
+		"Jacira Paes de Carvalho",
+		"Zaqueu Machado Borges Júnior"
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Espanhol"
+	],
+	"price": 229.00,
+	"created_at": "2018-02-04 13:51:47", 
+	"updated_at": "2018-04-05 21:15:18"
+},{
+	"id": 8,
+	"isbn": 7898592130952,
+	"title": "360º Filosofia",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11699118CJ_resized_597x800.jpg",
+	"author": [
+		"Renato dos Santos Belo"
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Filosofia"
+	],
+	"price": 219.00,
+	"created_at": "2018-01-18 21:25:02", 
+	"updated_at": "2018-05-06 15:36:35"
+},{
+	"id": 9,
+	"isbn": 7898592131072,
+	"title": "360º Sociologia",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11699119CJ_resized_596x800.jpg",
+	"author": [
+		"Agnaldo Kupper"
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Sociologia"
+	],
+	"price": 219.00,
+	"created_at": "2018-02-01 02:17:34", 
+	"updated_at": "2018-09-23 20:53:05"
+},{
+	"id": 10,
+	"isbn": 7898592131904,
+	"title": "360º Inglês",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11687310CJM_resized_600x794.jpg",
+	"author": [
+		"Flávia da Cruz Miguel"
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Inglês"
+	],
+	"price": 229.00,
+	"created_at": "2018-01-13 13:05:55", 
+	"updated_at": "2018-10-29 09:09:50"
+},{
+	"id": 11,
+	"isbn": 7898592130976,
+	"title": "360º Física",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11655077CJ_resized_600x793.jpg",
+	"author": [
+		"Claudio Xavier da Silva",
+		"Benigno Barreto Filho"
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Física"
+	],
+	"price": 249.00,
+	"created_at": "2018-01-15 02:18:14", 
+	"updated_at": "2018-06-12 21:31:08"
+},{
+	"id": 12,
+	"isbn": 7898592130914,
+	"title": "360º Arte",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11640020CJ_resized_596x800.jpg",
+	"author": [
+		"Solange Utuari",
+		"Daniela Libâneo",
+		"Fábio Sardo",
+		"Pascoal Ferrari"
+	],
+	"level": "Ensino médio",
+	"discipline": [
+		"Artes"
+	],
+	"price": 219.00,
+	"created_at": "2018-01-08 16:32:48", 
+	"updated_at": "2018-11-19 03:51:50"
+},{
+	"id": 13,
+	"isbn": 9788520000427,
+	"title": "Projeto Athos - Ciências - Caderno de Biologia",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11527305_resized_596x800.jpg",
+	"author": [
+		"José Trivellato",
+		"Silvia Trivellato",
+		"Marcelo Motokane",
+		"Júlio Foschini Lisboa",
+		"Carlos Kantor"
+	],
+	"level": "Ensino Fundamental",
+	"discipline": [
+		"Ciências"
+	],
+	"price": 85.00,
+	"created_at": "2018-01-24 03:32:09", 
+	"updated_at": "2018-05-27 21:11:20"
+},{
+	"id": 14,
+	"isbn": 9788532298393,
+	"title": "Projeto Athos - Geografia - 9º ano",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11535004KIT_resized_522x700.jpg",
+	"author": [
+		"Sonia Castellar",
+		"Ana Paula Gomes Seferian"
+	],
+	"level": "Ensino Fundamental",
+	"discipline": [
+		"Geografia"
+	],
+	"price": 85.00,
+	"created_at": "2018-03-19 20:04:48", 
+	"updated_at": "2018-05-01 04:11:58"
+},{
+	"id": 15,
+	"isbn": 9788532298393,
+	"title": "Projeto Athos - História - 9º ano",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11534994KIT_resized_522x700.jpg",
+	"author": [
+		"Joelza Esther"
+	],
+	"level": "Ensino Fundamental",
+	"discipline": [
+		"História"
+	],
+	"price": 185.00,
+	"created_at": "2018-03-19 20:04:48", 
+	"updated_at": "2018-05-01 04:11:58"
+},{
+	"id": 16,
+	"isbn": 9788532298379,
+	"title": "Projeto Athos - Ciências - 9º ano",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11628324KIT_resized_522x700.jpg",
+	"author": [
+		"José Trivellato",
+		"Silvia Trivellato",
+		"Carlos Kantor",
+		"Júlio Foschini Lisboa",
+		"Marcelo Motokane"
+	],
+	"level": "Ensino Fundamental",
+	"discipline": [
+		"Ciências"
+	],
+	"price": 185.00,
+	"created_at": "2018-03-23 02:07:59", 
+	"updated_at": "2018-08-31 01:24:05"
+},{
+	"id": 17,
+	"isbn": 9788520003671,
+	"title": "História, Sociedade & Cidadania - 6º ano",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11539283_resized_600x781.jpg",
+	"author": [
+		"Alfredo Boulos Júnior"
+	],
+	"level": "Ensino Fundamental",
+	"discipline": [
+		"História"
+	],
+	"price": 181.00,
+	"created_at": "2018-02-05 15:42:56",
+	"updated_at": "2018-09-09 06:02:28"
+},{
+	"id": 18,
+	"isbn": 9788520003695,
+	"title": "História, Sociedade & Cidadania - 7º ano",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11539284_resized_600x785.jpg",
+	"author": [
+		"Alfredo Boulos Júnior"
+	],
+	"level": "Ensino Fundamental",
+	"discipline": [
+		"História"
+	],
+	"price": 181.00,
+	"created_at": "2018-02-18 10:40:31",
+	"updated_at": "2018-09-25 21:24:31"
+},{
+	"id": 19,
+	"isbn": 9788520003718,
+	"title": "História, Sociedade & Cidadania - 8º ano",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11539285_resized_600x781.jpg",
+	"author": [
+		"Alfredo Boulos Júnior"
+	],
+	"level": "Ensino Fundamental",
+	"discipline": [
+		"História"
+	],
+	"price": 181.00,
+	"created_at": "2018-01-10 21:18:22",
+	"updated_at": "2018-06-15 11:06:23"
+},{
+	"id": 20,
+	"isbn": 9788520003732,
+	"title": "História, Sociedade & Cidadania - 9º ano",
+	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11539286_resized_600x783.jpg",
+	"author": [
+		"Alfredo Boulos Júnior"
+	],
+	"level": "Ensino Fundamental",
+	"discipline": [
+		"História"
+	],
+	"price": 181.00,
+	"created_at": "2018-01-23 00:20:40",
+	"updated_at": "2018-08-07 15:06:07"
+}]
