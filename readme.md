@@ -8,15 +8,6 @@ Aplicação simples de CRUD de Livros, Autores e Disciplinas utilizando técnica
 para gerencimento de ambientes com o uso de:
 
 
-## Acessos:
-
-Disponivel no Heroku com o seguinte Link:
-
-http://api-library-testcase.herokuapp.com/api/documentation e coverage report em:
-
-http://api-library-testcase.herokuapp.com/coverage-report
-
-
 ## Especificações Técnicas
 
 Esta aplicação conta com as seguintes especificações abaixo: 
@@ -32,6 +23,7 @@ Esta aplicação conta com as seguintes especificações abaixo:
 | Sqlite | 3.16.2 |
 | Laravel Framework | 5.7.* |
 | Swagger | 2.*.* |
+| Rabbitmq | 3.*.* |
 
 A aplicação é separada pelos seguintes conteineres
 
@@ -41,6 +33,7 @@ A aplicação é separada pelos seguintes conteineres
 | redis | redis:alpine |
 | php | laravel:php-fpm |
 | web (nginx) | nginx:alpine |
+| rabbitmq | rabbitmq:3-management-alpine |
 
 ## Requisitos
     - Docker
