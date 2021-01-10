@@ -50,6 +50,10 @@ A aplicação é separada pelos seguintes conteineres
 
 3 - Entrar no diretório base da aplicação e executar os comandos abaixo:
     
+    0 - cp docker/docker-compose-env/database.env.example docker/docker-compose-env/database.env
+        - cp docker/docker-compose-env/application.env.example docker/docker-compose-env/application.env
+        - cp docker/docker-compose-env/messagequeue.env.example docker/docker-compose-env/messagequeue.env
+
     1 - sudo docker-compose up -d; (LER OBSERVACAO)
 
     2 - sudo docker exec -t php-library php /var/www/html/artisan migrate;

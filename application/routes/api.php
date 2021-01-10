@@ -22,7 +22,7 @@ Route::group(['prefix' => 'v1'], function ()
 
     Route::group(['prefix' => 'author'], function ()
     {
-        Route::get('/process/message',
+        Route::post('/process/message',
             [ 'as' => 'author-process-message',
             'uses' => '\App\Domain\Authors\Controllers\AuthorsController@sendMessageToQueue'
         ]);

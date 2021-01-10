@@ -64,7 +64,7 @@ class AuthorsController extends Controller
     public function sendMessageToQueue(Request $request)
     {
         $this->dispatch(new ProcessExperimentalJob(
-            $request->all()['\message'].Carbon::now()->format('Y-m-d H:i:s:u')
+            json_decode($request->getContent(), true)['message'].' recebida em: '.Carbon::now()->format('Y-m-d H:i:s:u')
         ));
 
         return response()->json([

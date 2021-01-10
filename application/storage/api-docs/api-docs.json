@@ -9,8 +9,8 @@
       "email": "bruno.caramelo5@gmail.com"
     }
   },
-  "host": "localhost/api",
-  "basePath": "/v1",
+  "host": "localhost",
+  "basePath": "/api/v1",
   "tags": [
     {
       "name": "livraria",
@@ -142,6 +142,38 @@
             "required": true,
             "schema": {
               "$ref": "#/definitions/Author"
+            }
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "Objeto não encontrado"
+          }
+        }
+      }
+    },
+    "/author/process/message": {
+      "post": {
+        "tags": [
+          "author"
+        ],
+        "summary": "Enviar Mensagem ao Messaging Broker",
+        "description": "",
+        "operationId": "sendMessageAuthorBroker",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Enviar Mensagem ao Messaging Broker",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/MessageBroker"
             }
           }
         ],
@@ -414,22 +446,6 @@
     }
 
   },
-  "securityDefinitions": {
-    "petstore_auth": {
-      "type": "oauth2",
-      "authorizationUrl": "https://petstore.swagger.io/oauth/dialog",
-      "flow": "implicit",
-      "scopes": {
-        "write:pets": "modify pets in your account",
-        "read:pets": "read your pets"
-      }
-    },
-    "api_key": {
-      "type": "apiKey",
-      "name": "api_key",
-      "in": "header"
-    }
-  },
   "definitions": {
     "Author": {
       "type": "object",
@@ -455,6 +471,15 @@
         }
       }
     },
+    "MessageBroker": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Coloque aqui a mensagem para a fila de processamento"
+          }
+        }
+      },
     "Book": {
       "type": "object",
       "required": [
