@@ -51,13 +51,12 @@ A aplicação é separada pelos seguintes conteineres
 
     1 - sudo docker-compose up -d; (LER OBSERVACAO)
 
-    2 - sudo docker exec -t php-library php /var/www/html/artisan migrate;
+    2 - sudo docker exec -t php-library-example php /app/artisan migrate;
 
-    3 - sudo docker exec -t php-library php /var/www/html/artisan db:seed;
+    3 - sudo docker exec -t php-library-example php /app/artisan db:seed;
 
-    4 - sudo docker exec -t php-library php /var/www/html/artisan key:generate;
+    4 - sudo docker exec -t php-library-example php /app/artisan key:generate;
     
-    5 - sudo docker exec -t php-library phpunit;
 
     
 ### Descrição dos Passos
@@ -71,7 +70,7 @@ A aplicação é separada pelos seguintes conteineres
             2 - Aguardar uns 20 minutos ou pouco mais para que o comando seja efetivado. afim de evitar de autoload por exemplo.
             
             3 - Caso tenha algum problema de Depencias, executar o comando abaixo para garantir as mesmas.
-                sudo docker exec -t php-library composer install;
+                sudo docker exec -t php-library-example composer install;
     
     2 -  para que o framework gere e aplique o mapeamento para a base de dados (SQL) podendo ser Mysql, PostGres , Oracle , SQL Serve ou SQLITE por exemplo
     
@@ -93,12 +92,12 @@ A aplicação é separada pelos seguintes conteineres
             2 - Aguardar uns 20 minutos ou pouco mais para que o comando seja efetivado. afim de evitar erros de autoload por exemplo.
             
             3 - Caso tenha algum problema de Depencias, executar o comando abaixo para garantir as mesmas.
-                sudo docker exec -t php-library composer install;
+                sudo docker exec -t php-library-example composer install;
 
 #### Problemas com permissão do Webserver ao volume exposto (Passo 6)
-    - O mesmo pode ter problemas de permissão do Webserver ao volume /var/www/html (ou subdiretórios)
+    - O mesmo pode ter problemas de permissão do Webserver ao volume /app (ou subdiretórios)
       Mesmo não sendo indicado, mas por ser um ambiente local, pode ser feita a execução forçada de permissões com:
-       - sudo docker-compose exec web chmod 777 -R /var/www/html    
+       - sudo docker-compose exec web chmod 777 -R /app    
 
 ## Pós Instalação
 
