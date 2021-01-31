@@ -1,10 +1,10 @@
 [{
 	"id": 1,
-	"isbn": 7898592131010,
-	"title": "360° Literatura",
+	"isbn": 77798492141410,
+	"title": "Giro Literatura",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11603117CJ_resized_596x800.jpg",
 	"author": [
-		"Clenir Bellezi de Oliveira"
+		"Almir de Oliveira"
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -16,12 +16,12 @@
 	"updated_at": "2018-10-12 10:27:11"
 },{
 	"id": 2,
-	"isbn": 7898592131058,
-	"title": "360° Produção de Texto",
+	"isbn": 7848495135054,
+	"title": "Giro Produção de Texto",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11603118CJ_resized_596x800.jpg",
 	"author": [
-		"Maria Inês Campos",
-		"Regina Braz Rocha"
+		"Maria Ana Campinas",
+		"Reginalva Santos"
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -32,11 +32,11 @@
 	"updated_at": "2018-04-12 02:05:55"
 },{
 	"id": 3,
-	"isbn": 7898592130853,
-	"title": "360° Gramática",
+	"isbn": 78977598180713,
+	"title": "Giro Gramática",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
 	"author": [
-		"Mauro Ferreira"
+		"Mauro Ueda"
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -48,14 +48,12 @@
 	"updated_at": "2018-10-12 16:42:49"
 },{
 	"id": 4,
-	"isbn": 7898592131034,
-	"title": "360° Matemática",
+	"isbn": 7898592834014,
+	"title": "Giro Matemática",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11615647CJ_resized_596x800.jpg",
 	"author": [
-		"José Ruy Giovanni",
-		"José Ruy Giovanni Jr.",
-		"José Roberto Bonjorno",
-		"Paulo Roberto Câmara de Sousa"
+		"José Andrade",
+		"José Carlor Silva Marcio"
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -66,12 +64,12 @@
 	"updated_at": "2018-02-02 17:16:13"
 },{
 	"id": 5,
-	"isbn": 7898592130990,
-	"title": "360° Geografia",
+	"isbn": 7898492441940,
+	"title": "Giro Geografia",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11633072CJ_resized_600x794.jpg",
 	"author": [
-		"Edilson Adão",
-		"Laercio Furquim Jr."
+		"Edson Almir",
+		"Laerte Furla."
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -82,11 +80,11 @@
 	"updated_at": "2018-09-21 08:41:52"
 },{
 	"id": 6,
-	"isbn": 7898592131096,
-	"title": "360° Química",
+	"isbn": 7298591131094,
+	"title": "Giro Química",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11655078CJ_resized_596x800.jpg",
 	"author": [
-		"Dalton Franco"
+		"Calton Marcos"
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -97,13 +95,13 @@
 	"updated_at": "2018-05-29 02:35:02"
 },{
 	"id": 7,
-	"isbn": 7898592131096,
-	"title": "360º Espanhol",
+	"isbn": 7778492131096,
+	"title": "Giro Espanhol",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11687325CJM_resized_595x800.jpg",
 	"author": [
-		"Henrique Romanos",
-		"Jacira Paes de Carvalho",
-		"Zaqueu Machado Borges Júnior"
+		"Calton Maste",
+		"Joaquim Lemes",
+		"Normam Arlam"
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -114,11 +112,11 @@
 	"updated_at": "2018-04-05 21:15:18"
 },{
 	"id": 8,
-	"isbn": 7898592130952,
-	"title": "360º Filosofia",
+	"isbn": 7898779771377452,
+	"title": "Giro Filosofia",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11699118CJ_resized_597x800.jpg",
 	"author": [
-		"Renato dos Santos Belo"
+		"Carlos Bela Vista"
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -129,11 +127,11 @@
 	"updated_at": "2018-05-06 15:36:35"
 },{
 	"id": 9,
-	"isbn": 7898592131072,
-	"title": "360º Sociologia",
+	"isbn": 7848542141772,
+	"title": "Giro Sociologia",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11699119CJ_resized_596x800.jpg",
 	"author": [
-		"Agnaldo Kupper"
+		"Andre Kouta"
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -145,10 +143,10 @@
 },{
 	"id": 10,
 	"isbn": 7898592131904,
-	"title": "360º Inglês",
+	"title": "Giro Inglês",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11687310CJM_resized_600x794.jpg",
 	"author": [
-		"Flávia da Cruz Miguel"
+		"Flávio da Silva"
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -159,12 +157,12 @@
 	"updated_at": "2018-10-29 09:09:50"
 },{
 	"id": 11,
-	"isbn": 7898592130976,
-	"title": "360º Física",
+	"isbn": 723592130976,
+	"title": "Giro Física",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11655077CJ_resized_600x793.jpg",
 	"author": [
-		"Claudio Xavier da Silva",
-		"Benigno Barreto Filho"
+		"Claudia Maria Silva",
+		"Rafale Silva Filho"
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -175,14 +173,13 @@
 	"updated_at": "2018-06-12 21:31:08"
 },{
 	"id": 12,
-	"isbn": 7898592130914,
-	"title": "360º Arte",
+	"isbn": 7744592130914,
+	"title": "Giro Arte",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11640020CJ_resized_596x800.jpg",
 	"author": [
-		"Solange Utuari",
-		"Daniela Libâneo",
-		"Fábio Sardo",
-		"Pascoal Ferrari"
+		"Solange Maria",
+		"Daniel Alt",
+		"Gustavo Sardal"
 	],
 	"level": "Ensino médio",
 	"discipline": [
@@ -193,15 +190,12 @@
 	"updated_at": "2018-11-19 03:51:50"
 },{
 	"id": 13,
-	"isbn": 9788520000427,
-	"title": "Projeto Athos - Ciências - Caderno de Biologia",
+	"isbn": 9788724004427,
+	"title": "Projeto Ciências - Caderno de Biologia",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11527305_resized_596x800.jpg",
 	"author": [
-		"José Trivellato",
-		"Silvia Trivellato",
-		"Marcelo Motokane",
-		"Júlio Foschini Lisboa",
-		"Carlos Kantor"
+		"José Trito",
+		"Silvia Trito"
 	],
 	"level": "Ensino Fundamental",
 	"discipline": [
@@ -212,12 +206,12 @@
 	"updated_at": "2018-05-27 21:11:20"
 },{
 	"id": 14,
-	"isbn": 9788532298393,
-	"title": "Projeto Athos - Geografia - 9º ano",
+	"isbn": 9788534248393,
+	"title": "Projeto Geografia - 9º ano",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11535004KIT_resized_522x700.jpg",
 	"author": [
 		"Sonia Castellar",
-		"Ana Paula Gomes Seferian"
+		"Ana Maria Silt"
 	],
 	"level": "Ensino Fundamental",
 	"discipline": [
@@ -228,11 +222,11 @@
 	"updated_at": "2018-05-01 04:11:58"
 },{
 	"id": 15,
-	"isbn": 9788532298393,
-	"title": "Projeto Athos - História - 9º ano",
+	"isbn": 9788534294313,
+	"title": "Projeto História - 9º ano",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11534994KIT_resized_522x700.jpg",
 	"author": [
-		"Joelza Esther"
+		"Joelza Esra"
 	],
 	"level": "Ensino Fundamental",
 	"discipline": [
@@ -243,15 +237,14 @@
 	"updated_at": "2018-05-01 04:11:58"
 },{
 	"id": 16,
-	"isbn": 9788532298379,
-	"title": "Projeto Athos - Ciências - 9º ano",
+	"isbn": 9484534248379,
+	"title": "Projeto Ciências - 9º ano",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11628324KIT_resized_522x700.jpg",
 	"author": [
-		"José Trivellato",
-		"Silvia Trivellato",
-		"Carlos Kantor",
-		"Júlio Foschini Lisboa",
-		"Marcelo Motokane"
+		"José Trito",
+		"Silvia Trito",
+		"Carlos Kass",
+		"Júlio Fos Lista"
 	],
 	"level": "Ensino Fundamental",
 	"discipline": [
@@ -266,7 +259,7 @@
 	"title": "História, Sociedade & Cidadania - 6º ano",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11539283_resized_600x781.jpg",
 	"author": [
-		"Alfredo Boulos Júnior"
+		"Carlos Altico"
 	],
 	"level": "Ensino Fundamental",
 	"discipline": [
@@ -281,7 +274,7 @@
 	"title": "História, Sociedade & Cidadania - 7º ano",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11539284_resized_600x785.jpg",
 	"author": [
-		"Alfredo Boulos Júnior"
+		"Carlos Altico"
 	],
 	"level": "Ensino Fundamental",
 	"discipline": [
@@ -292,11 +285,11 @@
 	"updated_at": "2018-09-25 21:24:31"
 },{
 	"id": 19,
-	"isbn": 9788520003718,
+	"isbn": 9788580013718,
 	"title": "História, Sociedade & Cidadania - 8º ano",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11539285_resized_600x781.jpg",
 	"author": [
-		"Alfredo Boulos Júnior"
+		"Carlos Altico"
 	],
 	"level": "Ensino Fundamental",
 	"discipline": [
@@ -307,11 +300,11 @@
 	"updated_at": "2018-06-15 11:06:23"
 },{
 	"id": 20,
-	"isbn": 9788520003732,
-	"title": "História, Sociedade & Cidadania - 9º ano",
+	"isbn": 7788220003732,
+	"title": "História, Sociedades & Cidadania",
 	"cover": "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11539286_resized_600x783.jpg",
 	"author": [
-		"Alfredo Boulos Júnior"
+		"Carlos Altico"
 	],
 	"level": "Ensino Fundamental",
 	"discipline": [

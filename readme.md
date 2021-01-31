@@ -1,9 +1,5 @@
 # SIMPLES API DE LIVROS
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b4e2f043675e4aa7b4131714b45c3ced)](https://app.codacy.com/app/brunocaramelo/library_api?utm_source=github.com&utm_medium=referral&utm_content=brunocaramelo/library_api&utm_campaign=Badge_Grade_Settings)
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/0ee714429a0148b282e582025dcdd80e)](https://www.codacy.com/app/brunocaramelo/library_api?utm_source=github.com&utm_medium=referral&utm_content=brunocaramelo/library_api&utm_campaign=Badge_Coverage)
-
 Aplicação simples de CRUD de Livros, Autores e Disciplinas utilizando técnicas que podem ser utilizadas com CI/CD
 para gerencimento de ambientes com o uso de:
 
@@ -44,8 +40,7 @@ A aplicação é separada pelos seguintes conteineres
     Procedimentos de Instação da aplicação para uso local
 
 1- Baixar repositório 
-    - git clone https://github.com/brunocaramelo/library_api.git
-
+    
 2 - Verificar se as portas 80 e 3306 estão ocupadas.
 
 3 - Entrar no diretório base da aplicação e executar os comandos abaixo:
@@ -114,11 +109,6 @@ Após instalar o endereço de acesso é:
 
 ## Changelog
 
-### v1.8.0
-#### Coverage Full
- - Cobertura de testes 100%
- - Coverage também com a plataforma Codacy
-
 ### v1.7.0
 #### Code Review
  - Refatoração de código
@@ -131,12 +121,6 @@ Após instalar o endereço de acesso é:
  - Ajuste de orientação
  - Correção de pequenos bugs
 
-### v1.5.0
-#### Implantação no Heroku
-- Correções de bugs
-- Ajustes no read.me
-- Ajustes no schema do Swagger
-- Disponibilização da aplicação em : http://api-library-testcase.herokuapp.com/api/documentation
 
 ### v1.4.0
 #### Instalação do Swagger e ajustes finais
