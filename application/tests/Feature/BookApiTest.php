@@ -30,7 +30,7 @@ class BookApiTest extends TestCase
                             "id"=> 2,
                             "isbn"=> 7898592131058,
                             "title"=> "Livro Falso 2",
-                            "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11603118CJ_resized_596x800.jpg",
+                            "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11603118CJ_resized_596x800.jpg",
                             "author"=> [
                                 "Maria Falsa",
                                 "Regina Falsa"
@@ -65,7 +65,7 @@ class BookApiTest extends TestCase
                                 "id"=> 1,
                                 "isbn"=> 7898592131010,
                                 "title"=> "Livro Falso 1",
-                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11603117CJ_resized_596x800.jpg",
+                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11603117CJ_resized_596x800.jpg",
                                 "author"=> [
                                     "Clenir Bellezi de Oliveira"
                                 ],
@@ -80,7 +80,7 @@ class BookApiTest extends TestCase
                                 "id"=> 2,
                                 "isbn"=> 7898592131058,
                                 "title"=> "Livro Falso 2",
-                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11603118CJ_resized_596x800.jpg",
+                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11603118CJ_resized_596x800.jpg",
                                 "author"=> [
                                     "Maria Falsa",
                                     "Regina Falsa"
@@ -95,7 +95,7 @@ class BookApiTest extends TestCase
                                 "id"=> 3,
                                 "isbn"=> 7898592130853,
                                 "title"=> "Livro Falso 3",
-                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
+                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
                                 "author"=> [
                                     "Mauro Falso"
                                 ],
@@ -115,7 +115,7 @@ class BookApiTest extends TestCase
         $this->json('PUT', '/api/v1/book/2', [
                                                 "isbn"=> 7898592180847,
                                                 "title"=> "Livro Falso 3 Que mudei",
-                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
+                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
                                                 "author"=> [
                                                     2
                                                 ],
@@ -137,7 +137,7 @@ class BookApiTest extends TestCase
         $this->json('PUT', '/api/v1/book/99', [
                                                 "isbn"=> 7897572140847987897,
                                                 "title"=> "Livro Falso 3 Que mudei",
-                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
+                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
                                                 "author"=> [
                                                     2
                                                 ],
@@ -159,7 +159,7 @@ class BookApiTest extends TestCase
         $this->json('PUT', '/api/v1/book/2', [
                                                 "isbn"=> null,
                                                 "title"=> "Livro Falso 3 Que mudei",
-                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
+                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
                                                 "author"=> [
                                                     2
                                                 ],
@@ -181,7 +181,7 @@ class BookApiTest extends TestCase
         $this->json('PUT', '/api/v1/book/2', [
                                                 "isbn"=> 4456456444654,
                                                 "title"=> "Livro Falso 3 Que mudei",
-                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
+                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
                                                 "author"=> [
                                                     999
                                                 ],
@@ -203,7 +203,7 @@ class BookApiTest extends TestCase
         $this->json('PUT', '/api/v1/book/2', [
                                                 "isbn"=> 4456456444654,
                                                 "title"=> "Livro Falso 3 Que mudei",
-                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
+                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
                                                 "author"=> [
                                                     1,
                                                     2
@@ -227,7 +227,7 @@ class BookApiTest extends TestCase
         $this->json('POST', '/api/v1/book/', [
                                                 "isbn"=> 4456456444654,
                                                 "title"=> "Livro Falso 3 Que mudei",
-                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
+                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
                                                 "author"=> [
                                                     1,
                                                     2
@@ -250,7 +250,7 @@ class BookApiTest extends TestCase
         $this->json('POST', '/api/v1/book/',  [
                                                 "isbn"=> 7898592131010,
                                                 "title"=> "Livro Falso 1",
-                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11603117CJ_resized_596x800.jpg",
+                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11603117CJ_resized_596x800.jpg",
                                                 "author"=> [
                                                     "Clenir Bellezi de Oliveira"
                                                 ],
@@ -272,7 +272,7 @@ class BookApiTest extends TestCase
         $this->json('POST', '/api/v1/book/', [
                                                 "isbn"=> 4456456444654,
                                                 "title"=> "Livro Falso 3 Que mudei",
-                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
+                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
                                                 "author"=> [
                                                     999
                                                 ],
@@ -294,7 +294,7 @@ class BookApiTest extends TestCase
         $this->json('POST', '/api/v1/book/', [
                                                 "isbn"=> 4456456444654,
                                                 "title"=> "Livro Falso 3 Que mudei",
-                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.ftd.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
+                                                "cover"=> "https://s3-us-west-2.amazonaws.com/catalogo.minhalivraria.com.br/files/uploads/11604000CJ_resized_596x800.jpg",
                                                 "author"=> [
                                                     1,
                                                     2
