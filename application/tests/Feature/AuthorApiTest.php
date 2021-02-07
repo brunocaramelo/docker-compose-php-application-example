@@ -73,7 +73,7 @@ class AuthorApiTest extends TestCase
         $this->json('PUT', '/api/v1/author/2', ['name' => 'Sally'])
                 ->assertStatus(200)
                 ->assertJson([
-                        "message"=> "Autor Editado com sucesso",
+                        "message"=> "Author Edited successfully",
                     ]);
     }
 
@@ -100,7 +100,7 @@ class AuthorApiTest extends TestCase
         $this->json('POST', '/api/v1/author/', ['name' => 'Sally'])
                 ->assertStatus(200)
                 ->assertJson([
-                        "message"=> "Autor Criado com sucesso",
+                        "message"=> "Author Created successfully",
                     ]);
     }
 

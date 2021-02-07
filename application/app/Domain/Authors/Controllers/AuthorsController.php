@@ -37,7 +37,7 @@ class AuthorsController extends Controller
             $body = json_decode($request->getContent(), true);
             $authorService->update($request->route('id'), $body);
             \DB::commit();
-            return response()->json(['message'=>'Autor Editado com sucesso']);
+            return response()->json(['message'=>'Author Edited successfully']);
         } catch (AuthorEditException $error) {
             \DB::rollback();
             return response()->json(['error'=>$error->getMessage()], 422);
@@ -54,7 +54,7 @@ class AuthorsController extends Controller
             $body = json_decode($request->getContent(), true);
             $authorService->create($body);
             \DB::commit();
-            return response()->json(['message'=>'Autor Criado com sucesso']);
+            return response()->json(['message'=>'Author Created successfully']);
         } catch (AuthorEditException $error) {
             \DB::rollback();
             return response()->json(['error'=>$error->getMessage()], 422);
@@ -64,12 +64,12 @@ class AuthorsController extends Controller
     public function sendMessageToQueue(Request $request)
     {
         $this->dispatch(new ProcessExperimentalJob(
-            json_decode($request->getContent(), true)['message'].' recebida em: '.Carbon::now()->format('Y-m-d H:i:s:u')
+            json_decode($request->getContent(), true)['message'].' received at: '.Carbon::now()->format('Y-m-d H:i:s:u')
         ));
 
         return response()->json([
             'status' => '200',
-            'message'=> 'Envio efetuado com sucesso, aguarde o processamento',
+            'message'=> 'Successful submission, wait for processing',
             'data'=> null
             ]);
     }

@@ -16,7 +16,7 @@ class DisciplinesController extends Controller
     {
         return response()->json(['data' => $disciplineService->getAll()]);
     }
-    
+
     public function getById(DisciplineService $disciplineService, Request $request)
     {
         try {
@@ -26,7 +26,7 @@ class DisciplinesController extends Controller
             return response()->json(['error'=>$error->getMessage()], 404);
         }
     }
-    
+
     public function store(DisciplineService $disciplineService, Request $request)
     {
         try {
@@ -34,7 +34,7 @@ class DisciplinesController extends Controller
             $body = json_decode($request->getContent(), true);
             $disciplineService->update($request->route('id'), $body);
             \DB::commit();
-            return response()->json(['message'=>'Disciplina Editada com sucesso']);
+            return response()->json(['message'=>'Discipline successfully edited']);
         } catch (DisciplineEditException $error) {
             \DB::rollback();
             return response()->json(['error'=>$error->getMessage()], 422);
@@ -51,7 +51,7 @@ class DisciplinesController extends Controller
             $body = json_decode($request->getContent(), true);
             $disciplineService->create($body);
             \DB::commit();
-            return response()->json(['message'=>'Disciplina Criada com sucesso']);
+            return response()->json(['message'=>'Successfully Created Discipline']);
         } catch (DisciplineEditException $error) {
             \DB::rollback();
             return response()->json(['error'=>$error->getMessage()], 422);

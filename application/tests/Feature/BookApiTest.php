@@ -128,7 +128,7 @@ class BookApiTest extends TestCase
                                             ])
                 ->assertStatus(200)
                 ->assertJson([
-                        "message"=> "Livro Editado com sucesso",
+                        "message"=> "Book successfully edited",
                     ]);
     }
 
@@ -241,7 +241,7 @@ class BookApiTest extends TestCase
                                             ])
                 ->assertStatus(200)
                 ->assertJson([
-                        "message"=> "Livro Criado com sucesso",
+                        "message"=> "Successfully Created Book",
                     ]);
     }
 
@@ -327,7 +327,7 @@ class BookApiTest extends TestCase
         $this->json("DELETE", '/api/v1/book/2', [])
                 ->assertStatus(200)
                 ->assertJson([
-                        "data"=> "Livro Removido com sucesso",
+                        "data"=> "Book successfully removed",
                     ]);
     }
 

@@ -36,7 +36,7 @@ class BooksController extends Controller
             $body = json_decode($request->getContent(), true);
             $bookService->update($request->route('id'), $body);
             \DB::commit();
-            return response()->json(['message'=>'Livro Editado com sucesso']);
+            return response()->json(['message'=>'Book successfully edited']);
         } catch (BookEditException | AuthorNotFoundException | DisciplineNotFoundException $error) {
             \DB::rollback();
             return response()->json(['error'=>$error->getMessage()], 422);
@@ -53,7 +53,7 @@ class BooksController extends Controller
             $body = json_decode($request->getContent(), true);
             $bookService->create($body);
             \DB::commit();
-            return response()->json(['message'=>'Livro Criado com sucesso']);
+            return response()->json(['message'=>'Successfully Created Book']);
         } catch (BookEditException | AuthorNotFoundException | DisciplineNotFoundException $error) {
             \DB::rollback();
             return response()->json(['error'=>$error->getMessage()], 422);
@@ -66,7 +66,7 @@ class BooksController extends Controller
             \DB::beginTransaction();
             $bookService->remove($request->id);
             \DB::commit();
-            return response()->json(['data' => 'Livro Removido com sucesso'], 200);
+            return response()->json(['data' => 'Book successfully removed'], 200);
         } catch (BookNotFoundException $error) {
             \DB::rollback();
             return response()->json(['error'=>$error->getMessage()], 404);

@@ -1,9 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Sample of library test",
+    "description": "Exemplar de teste de biblioteca",
     "version": "1.0.0",
-    "title": "Library test",
+    "title": "Teste de biblioteca",
     "termsOfService": "https://swagger.io/terms/",
     "contact": {
       "email": "bruno.caramelo5@gmail.com"
@@ -13,9 +13,8 @@
   "basePath": "/api/v1",
   "tags": [
     {
-      "name": "libraryapi",
-      "description": "Sample library documentation",
-
+      "name": "livraria",
+      "description": "Exemplo de livraria documentado por aqui",
       "externalDocs": {
         "description": "Verifique mais",
         "url": "https://swagger.io"
@@ -31,7 +30,7 @@
         "tags": [
           "author"
         ],
-        "summary": "List Authors",
+        "summary": "Listar Autores",
         "description": "",
         "operationId": "listAuthors",
         "consumes": [
@@ -44,7 +43,7 @@
         ],
         "responses": {
           "200": {
-            "description": "List of Authors"
+            "description": "Lista de autores"
           }
         }
       }
@@ -54,7 +53,7 @@
         "tags": [
           "author"
         ],
-        "summary": "Author Detail",
+        "summary": "Detalhar Autore",
         "description": "",
         "operationId": "detailAuthor",
         "consumes": [
@@ -67,7 +66,7 @@
           {
             "name": "authorId",
             "in": "path",
-            "description": "Id of Author to be detailed",
+            "description": "Id do Autor a ser detalhado",
             "required": true,
             "type": "integer",
             "format": "int64"
@@ -75,7 +74,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Author detail"
+            "description": "Lista de autores"
           }
         }
       },
@@ -83,7 +82,7 @@
         "tags": [
           "author"
         ],
-        "summary": "Update Author",
+        "summary": "Atualizar um Autor",
         "description": "",
         "operationId": "updateAutjor",
         "consumes": [
@@ -96,7 +95,7 @@
           {
             "name": "authorId",
             "in": "path",
-            "description": "Id of Author to be changed",
+            "description": "Id do Autor a ser alterado",
             "required": true,
             "type": "integer",
             "format": "int64"
@@ -104,7 +103,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Update Authors",
+            "description": "Atualizacao de Autores",
             "required": true,
             "schema": {
               "$ref": "#/definitions/Author"
@@ -113,10 +112,10 @@
         ],
         "responses": {
           "404": {
-            "description": "Obbject not found"
+            "description": "Objeto não encontrado"
           },
           "422": {
-            "description": "Validation errors"
+            "description": "Erros de validação"
           }
         }
       }
@@ -126,7 +125,7 @@
         "tags": [
           "author"
         ],
-        "summary": "Add Author",
+        "summary": "Adicionar Autor",
         "description": "",
         "operationId": "addAuthor",
         "consumes": [
@@ -139,7 +138,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Add Author",
+            "description": "Adicionar Autor",
             "required": true,
             "schema": {
               "$ref": "#/definitions/Author"
@@ -148,7 +147,7 @@
         ],
         "responses": {
           "404": {
-            "description": "Obbject not found"
+            "description": "Objeto não encontrado"
           }
         }
       }
@@ -158,7 +157,7 @@
         "tags": [
           "author"
         ],
-        "summary": "Send Message to Messaging Broker",
+        "summary": "Enviar Mensagem ao Messaging Broker",
         "description": "",
         "operationId": "sendMessageAuthorBroker",
         "consumes": [
@@ -171,7 +170,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Send Message to Messaging Broker",
+            "description": "Enviar Mensagem ao Messaging Broker",
             "required": true,
             "schema": {
               "$ref": "#/definitions/MessageBroker"
@@ -180,7 +179,7 @@
         ],
         "responses": {
           "404": {
-            "description": "Obbject not found"
+            "description": "Objeto não encontrado"
           }
         }
       }
@@ -191,7 +190,7 @@
         "tags": [
           "discipline"
         ],
-        "summary": "List Disciplines",
+        "summary": "Listar Disciplinas",
         "description": "",
         "operationId": "listDisciplines",
         "consumes": [
@@ -204,7 +203,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Lista de Disciplines"
+            "description": "Lista de disciplinas"
           }
         }
       }
@@ -214,7 +213,7 @@
         "tags": [
           "discipline"
         ],
-        "summary": "Detail Discipline",
+        "summary": "Detalhar Disciplina",
         "description": "",
         "operationId": "detailDiscipline",
         "consumes": [
@@ -227,7 +226,7 @@
           {
             "name": "disciplineId",
             "in": "path",
-            "description": "Id da Discipline to be detailed",
+            "description": "Id da Disciplina a ser detalhada",
             "required": true,
             "type": "integer",
             "format": "int64"
@@ -235,7 +234,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Disciplines list"
+            "description": "Lista de disciiplinas"
           }
         }
       },
@@ -243,7 +242,7 @@
         "tags": [
           "discipline"
         ],
-        "summary": "Update Discipline",
+        "summary": "Atualizar um Disciplina",
         "description": "",
         "operationId": "updateDiscipline",
         "consumes": [
@@ -256,7 +255,7 @@
           {
             "name": "disciplineId",
             "in": "path",
-            "description": "Id da Discipline to be changed",
+            "description": "Id da Disciplina a ser alterada",
             "required": true,
             "type": "integer",
             "format": "int64"
@@ -264,7 +263,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Update Authors",
+            "description": "Atualizacao de Autores",
             "required": true,
             "schema": {
               "$ref": "#/definitions/Discipline"
@@ -273,10 +272,10 @@
         ],
         "responses": {
           "404": {
-            "description": "Obbject not found"
+            "description": "Objeto não encontrado"
           },
           "422": {
-            "description": "Validation errors"
+            "description": "Erros de validação"
           }
         }
       }
@@ -286,7 +285,7 @@
         "tags": [
           "discipline"
         ],
-        "summary": "Add Discipline",
+        "summary": "Adicionar Disciplina",
         "description": "",
         "operationId": "addDiscipline",
         "consumes": [
@@ -299,7 +298,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Add Disciplines",
+            "description": "Adicionar Disciplinas",
             "required": true,
             "schema": {
               "$ref": "#/definitions/Discipline"
@@ -308,7 +307,7 @@
         ],
         "responses": {
           "404": {
-            "description": "Obbject not found"
+            "description": "Objeto não encontrado"
           }
         }
       }
@@ -319,7 +318,7 @@
         "tags": [
           "book"
         ],
-        "summary": "List Books",
+        "summary": "Listar Livros",
         "description": "",
         "operationId": "listBooks",
         "consumes": [
@@ -332,7 +331,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Books List"
+            "description": "Lista de livros"
           }
         }
       }
@@ -342,7 +341,7 @@
         "tags": [
           "book"
         ],
-        "summary": "Add Book",
+        "summary": "Adicionar Livro",
         "description": "",
         "operationId": "addBook",
         "consumes": [
@@ -355,7 +354,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Add Books",
+            "description": "Adicionar Livros",
             "required": true,
             "schema": {
               "$ref": "#/definitions/Book"
@@ -364,10 +363,10 @@
         ],
         "responses": {
           "404": {
-            "description": "Object not found"
+            "description": "Objeto não encontrado"
           },
           "422": {
-            "description": "Validation errors"
+            "description": "Erros de validação"
           }
         }
       }
@@ -378,7 +377,7 @@
         "tags": [
           "book"
         ],
-        "summary": "Book Detail",
+        "summary": "Detalhar Livro",
         "description": "",
         "operationId": "detailBook",
         "consumes": [
@@ -391,7 +390,7 @@
           {
             "name": "bookId",
             "in": "path",
-            "description": "Id of Book to be detailed",
+            "description": "Id da Livro a ser detalhado",
             "required": true,
             "type": "integer",
             "format": "int64"
@@ -399,7 +398,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Books List"
+            "description": "Lista de livro"
           }
         }
       },
@@ -407,7 +406,7 @@
         "tags": [
           "book"
         ],
-        "summary": "Update Book",
+        "summary": "Atualizar um Livro",
         "description": "",
         "operationId": "updateBook",
         "consumes": [
@@ -420,7 +419,7 @@
           {
             "name": "bookId",
             "in": "path",
-            "description": "Id of Book to be changed",
+            "description": "Id do Livro a ser alterado",
             "required": true,
             "type": "integer",
             "format": "int64"
@@ -428,7 +427,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Update Authors",
+            "description": "Atualizacao de Autores",
             "required": true,
             "schema": {
               "$ref": "#/definitions/Book"
@@ -437,10 +436,10 @@
         ],
         "responses": {
           "404": {
-            "description": "Obbject not found"
+            "description": "Objeto não encontrado"
           },
           "422": {
-            "description": "Validation errors"
+            "description": "Erros de validação"
           }
         }
       }
@@ -477,7 +476,7 @@
         "properties": {
           "message": {
             "type": "string",
-            "example": "Place the message here for the processing queue"
+            "example": "Coloque aqui a mensagem para a fila de processamento"
           }
         }
       },
@@ -502,7 +501,7 @@
         },
         "title": {
           "type": "string",
-          "example": "Nome deste Book"
+          "example": "Nome deste livro"
         },
         "cover": {
           "type": "string",

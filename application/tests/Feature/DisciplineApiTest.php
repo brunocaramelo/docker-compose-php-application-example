@@ -74,7 +74,7 @@ class DisciplineApiTest extends TestCase
         $this->json('PUT', '/api/v1/discipline/2', ['name' => 'Religiao'])
                 ->assertStatus(200)
                 ->assertJson([
-                        "message"=> "Disciplina Editada com sucesso",
+                        "message"=> "Discipline successfully edited",
                     ]);
     }
 
@@ -101,7 +101,7 @@ class DisciplineApiTest extends TestCase
         $this->json('POST', '/api/v1/discipline/', ['name' => 'Geografia'])
                 ->assertStatus(200)
                 ->assertJson([
-                        "message"=> "Disciplina Criada com sucesso",
+                        "message"=> "Successfully Created Discipline",
                     ]);
     }
 
