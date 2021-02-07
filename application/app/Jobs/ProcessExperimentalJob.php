@@ -34,7 +34,7 @@ class ProcessExperimentalJob implements ShouldQueue
     public function handle()
     {
         \Log::info(
-            $this->message.' Processado em: '.Carbon::now()->format('Y-m-d H:i:s:u')
+            $this->message.' Processed at: '.Carbon::now()->format('Y-m-d H:i:s:u')
         );
     }
 }
