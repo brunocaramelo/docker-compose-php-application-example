@@ -20,7 +20,7 @@ services:
   php:
     build:
       context: .
-      dockerfile: ./docker/php7-fpm/Dockerfile
+      dockerfile: ./docker/php8-fpm/Dockerfile
     image: repo-registry-local/libraryapitest-app-example:v4.0
     container_name: php-library-example
     depends_on:
@@ -40,7 +40,7 @@ services:
   worker-php:
     build:
       context: .
-      dockerfile: ./docker/php7-fpm/Dockerfile
+      dockerfile: ./docker/php8-fpm/Dockerfile
     image: libraryapiotra:php-worker-example
     container_name: php-library-example-worker
     depends_on:
@@ -59,7 +59,7 @@ services:
   worker-queue:
     build:
       context: .
-      dockerfile: ./docker/php7-fpm/Dockerfile
+      dockerfile: ./docker/php8-fpm/Dockerfile
     image: libraryapiotra:php-worker-queue
     container_name: php-library-worker-queue-example
     depends_on:
