@@ -23,7 +23,7 @@
     }
   ],
   "schemes": [
-      "http"
+      "https"
   ],
   "paths": {
     "/authors": {
