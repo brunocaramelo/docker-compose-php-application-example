@@ -105,7 +105,7 @@ The application is separated by the following containers
 
 After installing the access address is:
 
-- http://localhost/api/documentation
+- https://localhost/api/documentation
 
 
 ## Changelog
