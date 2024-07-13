@@ -10,26 +10,28 @@ This application has the following specifications:
 
 | Tool | Version |
 | --- | --- |
-| Docker | 1.13.1 |
-| Docker Compose | 1.22.0 |
-| Nginx | 1.15.2 |
-| PHP | 7.2.11 |
-| Mariabd | 10.3.8 |
+| Docker | 24.0.7 |
+| Docker Compose | 1.29.2 |
+| Nginx | 1.19.2 |
+| PHP | 8.3.9 |
+| Mariabd | 10.11.3 |
 | Redis | 5.0.0 |
 | Sqlite | 3.16.2 |
-| Laravel Framework | 5.7.* |
+| Laravel Framework | 11.14.* |
 | Swagger | 2.*.* |
 | Rabbitmq | 3.*.* |
 
 The application is separated by the following containers
 
-| Service | Image |
-| --- | --- |
-| mysql | mariadb:latest |
-| redis | redis:alpine |
-| php | laravel:php-fpm |
-| web (nginx) | nginx:alpine |
-| rabbitmq | rabbitmq:3-management-alpine |
+| Service | Image | Motivação
+| --- | --- | --- |
+| mysql | mariadb:latest | Base de dados da aplicação |
+| redis | redis:alpine | Provedor de cache |
+| php | laravel:php-fpm | Aplicação web |
+| worker-queue | laravel:php-fpm | Scheduler |
+| worker-php | laravel:php-fpm | Processador de Filas |
+| web (nginx) | nginx:alpine | Web Server |
+| rabbitmq | rabbitmq:3-management-alpine | Filas |
 
 ## Requirements
     - Docker
