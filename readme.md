@@ -25,13 +25,13 @@ The application is separated by the following containers
 
 | Service | Image | Motivação
 | --- | --- | --- |
-| mysql | mariadb:latest | Base de dados da aplicação |
-| redis | redis:alpine | Provedor de cache |
-| php | laravel:php-fpm | Aplicação web |
+| mysql | mariadb:latest | Default database |
+| redis | redis:alpine | Cache provider |
+| php | laravel:php-fpm | Web Application backend |
 | worker-queue | laravel:php-fpm | Scheduler |
-| worker-php | laravel:php-fpm | Processador de Filas |
+| worker-php | laravel:php-fpm | Queue processor |
 | web (nginx) | nginx:alpine | Web Server |
-| rabbitmq | rabbitmq:3-management-alpine | Filas |
+| rabbitmq | rabbitmq:3-management-alpine | Queues |
 
 ## Requirements
     - Docker
