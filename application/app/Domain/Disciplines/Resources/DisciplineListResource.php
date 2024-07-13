@@ -10,6 +10,6 @@ class DisciplineListResource extends JsonResource
 {
     public function toArray($request)
     {
-        return DisciplineResource::collection($this)->toArray([]);
+        return DisciplineResource::collection($this)->toArray(new \Illuminate\Http\Request());
     }
 }

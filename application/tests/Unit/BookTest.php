@@ -12,7 +12,7 @@ class BookTest extends TestCase
     use RefreshDatabase;
     use RunSeed;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->runSeed();
@@ -41,6 +41,8 @@ class BookTest extends TestCase
      */
     public function testBookFailNotFound()
     {
+        $this->expectException(\App\Domain\Books\Exceptions\BookNotFoundException::class);
+
         $authorService = new BookService();
         $idFind = 10;
         $authorService->getById($idFind)->toArray([]);
@@ -69,6 +71,8 @@ class BookTest extends TestCase
      */
     public function testCreateBookFailAutor()
     {
+        $this->expectException(\App\Domain\Authors\Exceptions\AuthorNotFoundException::class);
+
         $expected = $this->returnListSeedResult()[1];
         $expected['isbn'] = '4644646464664';
 
@@ -84,6 +88,8 @@ class BookTest extends TestCase
      */
     public function testCreateBookFailDiscipline()
     {
+        $this->expectException(\App\Domain\Disciplines\Exceptions\DisciplineNotFoundException::class);
+
         $expected = $this->returnListSeedResult()[1];
         $expected['isbn'] = '4644646464664';
         $expected['author'] = [1];
@@ -101,6 +107,8 @@ class BookTest extends TestCase
      */
     public function testCreateBookFailExists()
     {
+        $this->expectException(\App\Domain\Books\Exceptions\BookEditException::class);
+
         $expected = $this->returnListSeedResult()[1];
 
         $authorService = new BookService();
@@ -132,6 +140,8 @@ class BookTest extends TestCase
      */
     public function testUpdateBookFailName()
     {
+        $this->expectException(\App\Domain\Books\Exceptions\BookEditException::class);
+
         $expected = $this->returnListSeedResult()[0];
         $expected['isbn'] = null;
 
@@ -151,6 +161,8 @@ class BookTest extends TestCase
      */
     public function testUpdateBookFailNotFound()
     {
+        $this->expectException(\App\Domain\Books\Exceptions\BookNotFoundException::class);
+
         $expected = $this->returnListSeedResult()[0];
         $expected['id'] = 99;
         $expected['isbn'] = 88899789789;
@@ -181,6 +193,8 @@ class BookTest extends TestCase
      */
     public function testExcludeBookFailNotFind()
     {
+        $this->expectException(\App\Domain\Books\Exceptions\BookNotFoundException::class);
+
         $userService = new BookService();
         $userService->remove(99);
     }

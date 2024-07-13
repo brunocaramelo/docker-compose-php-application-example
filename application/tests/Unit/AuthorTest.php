@@ -12,7 +12,7 @@ class AuthorTest extends TestCase
     use RefreshDatabase;
     use RunSeed;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->runSeed();
@@ -40,6 +40,8 @@ class AuthorTest extends TestCase
      */
     public function testAuthorFailNotFound()
     {
+        $this->expectException(\App\Domain\Authors\Exceptions\AuthorNotFoundException::class);
+
         $authorService = new AuthorService();
         $idFind = 10;
         $authorService->getById($idFind)->toArray([]);
@@ -61,6 +63,8 @@ class AuthorTest extends TestCase
      */
     public function testCreateAuthorFailExists()
     {
+        $this->expectException(\App\Domain\Authors\Exceptions\AuthorEditException::class);
+
         $expected = ['name' => 'Clenir Bellezi de Oliveira'];
 
         $authorService = new AuthorService();
@@ -89,6 +93,8 @@ class AuthorTest extends TestCase
      */
     public function testUpdateAuthorFailName()
     {
+        $this->expectException(\App\Domain\Authors\Exceptions\AuthorEditException::class);
+
         $expected = [
             'id' => '2',
             'name' => null
@@ -106,6 +112,8 @@ class AuthorTest extends TestCase
      */
     public function testUpdateAuthorFailNotFound()
     {
+        $this->expectException(\App\Domain\Authors\Exceptions\AuthorNotFoundException::class);
+
         $expected = [
             'id' => '99',
             'name' => 'Tem um nome'

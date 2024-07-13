@@ -12,7 +12,7 @@ class DisciplineTest extends TestCase
     use RefreshDatabase;
     use RunSeed;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->runSeed();
@@ -41,6 +41,8 @@ class DisciplineTest extends TestCase
      */
     public function testDisciplineFailNotFound()
     {
+        $this->expectException(\App\Domain\Disciplines\Exceptions\DisciplineNotFoundException::class);
+
         $authorService = new DisciplineService();
         $idFind = 10;
         $authorService->getById($idFind)->toArray([]);
@@ -62,6 +64,8 @@ class DisciplineTest extends TestCase
      */
     public function testCreateDisciplineFailExists()
     {
+        $this->expectException(\App\Domain\Disciplines\Exceptions\DisciplineEditException::class);
+
         $expected = ['name' => 'Literatura'];
 
         $authorService = new DisciplineService();
@@ -90,6 +94,8 @@ class DisciplineTest extends TestCase
      */
     public function testUpdateDisciplineFailName()
     {
+        $this->expectException(\App\Domain\Disciplines\Exceptions\DisciplineEditException::class);
+
         $expected = [
             'id' => '2',
             'name' => null
@@ -107,6 +113,8 @@ class DisciplineTest extends TestCase
      */
     public function testUpdateDisciplineFailNotFound()
     {
+        $this->expectException(\App\Domain\Disciplines\Exceptions\DisciplineNotFoundException::class);
+
         $expected = [
             'id' => '99',
             'name' => 'Tem um nome'

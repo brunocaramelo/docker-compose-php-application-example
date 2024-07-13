@@ -10,6 +10,6 @@ class AuthorListResource extends JsonResource
 {
     public function toArray($request)
     {
-        return AuthorResource::collection($this)->toArray([]);
+        return AuthorResource::collection($this)->toArray(new \Illuminate\Http\Request());
     }
 }

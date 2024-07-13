@@ -10,6 +10,6 @@ class BookListResource extends JsonResource
 {
     public function toArray($request)
     {
-        return BookResource::collection($this)->toArray([]);
+        return BookResource::collection($this)->toArray(new \Illuminate\Http\Request());
     }
 }
