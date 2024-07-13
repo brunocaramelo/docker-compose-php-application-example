@@ -1,0 +1,5 @@
+{
+    "require": {
+        "vladimir-yuldashev/laravel-queue-rabbitmq": "^14.1"
+    }
+}

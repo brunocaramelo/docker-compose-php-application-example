@@ -76,8 +76,7 @@ services:
       - rabbitmq
     volumes:
       - ./application/:/app:rw
-      # - /app/vendor
-
+      - /app/vendor
   web:
     image: nginx:1.19-alpine
     container_name: nginx-library
