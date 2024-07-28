@@ -11,6 +11,7 @@ trait RunSeed
     public function runSeed()
     {
         Cache::flush();
+        Artisan::call('migrate');
         Artisan::call('db:seed', ['--class' => 'Seeds\ImporFakeJsonSeeder' ]);
     }
 }

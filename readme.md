@@ -51,13 +51,13 @@ The application is separated by the following containers
         - cp docker/docker-compose-env/application.env.example docker/docker-compose-env/application.env
         - cp docker/docker-compose-env/messagequeue.env.example docker/docker-compose-env/messagequeue.env
 
-    1 - sudo docker-compose up -d; (READ OBSERVATION)
+    1 - docker-compose up -d; (READ OBSERVATION)
 
-    2 - sudo docker exec -t php-library-example php /app/artisan migrate;
+    2 - docker exec -t php-library-example php /app/artisan migrate;
 
-    3 - sudo docker exec -t php-library-example php /app/artisan db:seed;
+    3 - docker exec -t php-library-example php /app/artisan db:seed;
 
-    4 - sudo docker exec -t php-library-example php /app/artisan key:generate;
+    4 - docker exec -t php-library-example php /app/artisan key:generate;
     
 
     

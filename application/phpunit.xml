@@ -30,7 +30,17 @@
         <env name="SESSION_DRIVER" value="array"/>
         <env name="QUEUE_DRIVER" value="sync"/>
         <env name="DB_CONNECTION" value="sqlite_memory"/>
-        <env name="DB_DATABASE" value=":memory:"/>>
+        <env name="DB_DATABASE" value=":memory:"/>
+
+        <server name="APP_server" value="testing"/>
+        <server name="BCRYPT_ROUNDS" value="4"/>
+        <server name="CACHE_DRIVER" value="array"/>
+        <server name="MAIL_DRIVER" value="array"/>
+        <server name="QUEUE_CONNECTION" value="sync"/>
+        <server name="SESSION_DRIVER" value="array"/>
+        <server name="QUEUE_DRIVER" value="sync"/>
+        <server name="DB_CONNECTION" value="sqlite_memory"/>
+        <server name="DB_DATABASE" value=":memory:"/>
     </php>
     <logging>
         <log type="log-junit" target="../_reports/logs/log-junit.xml"/>
