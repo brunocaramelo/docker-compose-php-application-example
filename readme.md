@@ -1,5 +1,9 @@
 # SIMPLE API OF BOOKS
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/22e5836f344f44a0ae916ffc5c653f0c)](https://app.codacy.com/gh/brunocaramelo/library_api/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/22e5836f344f44a0ae916ffc5c653f0c)](https://app.codacy.com/gh/brunocaramelo/library_api/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
+
 Simple application of CRUD of Books, Authors and Disciplines using techniques that can be used with CI/CD
 for managing environments with the use of:
 
